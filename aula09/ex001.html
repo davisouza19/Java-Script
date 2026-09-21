@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando o DOM</title>
+    <style>
+        body{
+            background-color: rgb(70, 167, 78);
+            color: rgb(246, 246, 246);
+            font: normal 18px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div class="msg">Clique em mim</div>
+    <script>
+        //window.document.write('olá')
+        //window.document.write(window.document.URL) - escreve a url
+        //window.document.write(window.navigator.appName) - escreve o nome do navegador
+
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('no primeiro paragrafo esta escrito: ' + p1.innerHTML)
+       
+        var d = window.document.querySelectorAll('p')
+        d[0].style.color = 'black'
+        d[1].style.background = 'blue'
+        
+       
+        /*var d = window.document.getElementsByClassName('msg')[0]
+        d.style.background = 'orange'
+        d.innerText = 'estou aguardando...'*/
+        //window.document.getElementsByClassName('msg')[0].d.innerText = 'estou aguardando..' - outra forma de fazer
+
+        //corpo.style.background = 'orange'
+        //p1.style.color = 'black'
+
+
+    </script>
+</body>
+</html
