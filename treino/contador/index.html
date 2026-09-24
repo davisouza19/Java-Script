@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contador</title>
+</head>
+<body>
+    <section class="container">
+        <main class="Contador">
+            <div class="mostrador">0</div>
+            
+            <button class="limpar" onclick="limpar()">
+                limpar
+            </button>
+
+            <button class="add" onclick="adicionar()">
+                +1
+            </button>
+
+        </main>
+    </section>
+    <script>
+        let numero = document.querySelector('.mostrador')
+
+        function adicionar(){
+            let mais = Number(numero.innerText)
+            mais ++
+            numero.innerText = mais
+        }
+
+        function limpar(){
+            numero.innerText = 0
+        }
+    </script>
+</body>
+</html>
