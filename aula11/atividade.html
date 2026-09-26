@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex009 em HTML</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Estrangeiro ou brasileiro</h1>
+    <input type="text" name="pais" id="pais" placeholder="Insira seu pais natal" onkeydown="teclaEnter(event)">
+    <input type="button" value="enviar" onclick="verificar()">
+    <div id="resposta">...</div>
+    <script>
+        function verificar(){
+            let pais = document.getElementById('pais').value
+            let resposta = document.getElementById('resposta')
+
+            pais = pais.toLowerCase()
+
+            if (pais == 'brasil'){
+                resposta.innerText = 'BRASILEIRO!'
+            }else{
+                resposta.innerText = 'ESTRANGEIRO!'
+            }
+        }
+
+        function teclaEnter(event){
+            if (event.key == 'Enter') {
+                verificar()
+            }
+        }
+    </script>
+</body>
+</html>
