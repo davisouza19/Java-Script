@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2d06903287.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício parte 3 : Módulo D</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Ano de nacimento
+                <input type="number" name="Ano" id="ano">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="sex" id="masc" checked>
+                <label for="sex">Masculino</label>
+                <input type="radio" name="sex" id="femi">
+                <label for="sex">Feminino</label>
+            </p>
+            <p>
+                <button onclick="verificar()">Verificar</button>
+            </p>
+        </div>
+        <div id="resultado">
+            Preencha os campos acima para ver o resultado!
+        </div>
+    </section>
+    <footer><p>&copy; Davi de Souza</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
