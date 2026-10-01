@@ -24,7 +24,7 @@ function verificar(){
                 fazevida = 'adolecente'
             }else if (idade < 60){
                 fazevida = 'adulto(a)'
-            }else if (idade > 60){
+            }else if (idade >= 60){
                 fazevida = 'idoso(a)'
             }
         }else if (sexo[1].checked){
