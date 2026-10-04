@@ -17,7 +17,7 @@
 
         <section class="card">
             <div class="addcontainer">
-                <input type="text" name="iteninput" id="iteninput" placeholder="Ex: tomate, arroz, café...">
+                <input type="text" name="iteninput" id="iteninput" placeholder="Ex: tomate, arroz, café..." onkeydown="teclaEnter(event)">
                 <button id="add" onclick="adicionar()">Adicionar</button>
             </div>
 
@@ -34,7 +34,7 @@
             </ul>
 
             <div class="resumo">
-                <p class="totitens"></p>
+                <p class="totalitens">0 itens</p>
                 <p class="itensconcluidos"></p>
             </div>
 
