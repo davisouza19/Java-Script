@@ -47,13 +47,14 @@ header>h1{
 .addcontainer{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 .card>.addcontainer>#iteninput{
     background-color: var(--card);
     border: 1px solid var(--borda);
     border-radius: 7px;
-    padding: 5px;
+    padding: 10px;
     width: 80%;
     color: var(--texto-fraco);
 }
@@ -62,7 +63,7 @@ header>h1{
     background: var(--verde);
     border: 1px solid var(--borda);
     border-radius: 7px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .card>.addcontainer>#add:hover{
@@ -72,14 +73,46 @@ header>h1{
 #lista>li{
     display: flex;
     justify-content: space-between;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 5px;
 }
 
-#lista>li>span>input{
-    
+#lista>li:hover{
+    background-color: var(--fundo);
 }
 
 #lista>li>span>p{
     display: inline-block;
+    color: var(--texto);
+    padding-left: 10px;
+}
+
+#lista .concluircompra{
+    appearance: none;
+    border: 2px solid var(--texto-fraco);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+#lista>li>.remove{
+    color: var(--texto-fraco);
+    padding: 0px 12px;
+}
+
+#lista>li>.remove:hover{
+    color: rgb(142, 52, 52);
+    cursor: pointer;
+}
+
+.resumo{
+    display: flex;
+    justify-content: space-between;
+    color: var(--texto-fraco);
+    font-size: 0.8em;
+    margin-top: 15px;
 }
 
 @media  (max-width: 550px) {
@@ -89,5 +122,14 @@ header>h1{
     
     main{
         width: 93vw;
+    }
+    
+    #lista>li:active{
+        background-color: var(--fundo);
+    }
+    
+    #lista>li>.remove:active{
+        color: rgb(142, 52, 52);
+        cursor: pointer;
     }
 }
