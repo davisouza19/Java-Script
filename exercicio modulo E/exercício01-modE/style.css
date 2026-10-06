@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #2574ec;
+    padding-top: 20px;
+}
+
+header>h1{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    width: 500px;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.442);
+    text-align: left;
+}
+
+section span{
+    display: block;
+    line-height: 20px;
+}
+
+section span input{
+    width: 50%;
+    height: 30px;
+}
+
+section button{
+    padding: 10px;
+}
+
+.mostrador{
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+@media (max-width: 700px) {
+    section{
+        width: 93vw;
+    }
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

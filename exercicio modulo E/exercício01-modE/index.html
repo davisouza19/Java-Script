@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title></title>
+    <title>Estrutura de repetiçao em JS</title>
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>Vamos contar</h1>
     </header>
     <section>
-        <div>
-            
-        </div>
-        <div>
-
+        <div class="informaçoes">
+            <span><label for="inicio">Inicio: </label> <input type="number" name="var" id="inicio"></span><br>
+            <span><label for="fim">Fim: </label> <input type="number" name="var" id="fim"></span><br>
+            <span><label for="passo">Passo: </label> <input type="number" name="var" id="passo"></span><br>
+            <button id="botao-contar" onclick="contar()">Contar</button><br>
+         
+        </div> 
+        <div class="mostrador">
+            Preparando contagem...
         </div>
     </section>
-    <footer><p></p></footer>
+    <footer><p>&copy; Davi de Souza</p></footer>
     <script src="script.js"></script>
 </body>
 </html>
