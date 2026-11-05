@@ -64,5 +64,5 @@ console.log(alunos.some(
     }
 ))
 
-//join() -> transforma um atrry em uma frase
+//join() -> transforma um arrray em uma frase
 console.log(alunos.join(' - ')) /* virgula é padrao */
