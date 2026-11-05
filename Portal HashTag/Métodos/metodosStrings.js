@@ -19,6 +19,7 @@ console.log(string.replace('Mundo', 'Javascript')) //substitui apenas a primeira
 
 //indexOf()
 console.log(string.indexOf('á')) //procura se ouve um caso, se não encontrar mostra -1, se encontrar aparece o local
+/* funciona para array tmb */
 
 //split(delimitador, limite)
 let frutas = 'banana,maçã,uva,limão,laranja'
