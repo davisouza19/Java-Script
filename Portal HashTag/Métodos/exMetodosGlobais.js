@@ -46,3 +46,28 @@ function Datas(){
 Datas()
 
 //EXERCÍCIO 06
+let datadeNascimento = "2011-05-19"
+function CaucularIdade(datadeNascimento){
+    let Nascimento = new Date(datadeNascimento)
+    let Hoje = new Date() //data atual
+
+    //Calcular idade pela diferença de anos:
+    let idade = Hoje.getFullYear() - Nascimento.getFullYear()
+
+    //Criar data de aniversário atual
+    let aniversarioAtual = new Date(Hoje.getFullYear(), Nascimento.getMonth(), Nascimento.getDate()) //ANO, MES, DIA
+
+    //Calcular a diferença de meses e dias (milissegundos)
+    let diferençaDias = (Hoje - aniversarioAtual) / (1000 * 60 * 60 * 24)
+
+    //ajuste de idade (já fez aniversário ou não)
+    let ajuste = (diferençaDias < 0) * 1 //booleano tansformado em número
+    idade -= ajuste
+    console.log("Sua idade é: " + idade)
+}
+
+CaucularIdade(datadeNascimento)
+
+//DESAFIO (pegar a data de nascimeto e botar no padrao br)
+let DATA = new Date(2026, 10, 17)
+console.log(DATA.toLocaleDateString("pt-BR"))
