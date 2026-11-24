@@ -31,4 +31,37 @@ function gerarListaInvestimentos(investimentos, nome){
     return investimentosMaisNome
 }
 console.log(resultado2)
+
 //EXERCÍCIO 16
+
+function codificar(frase1){
+    let frase_codificada = ""
+    for(let i = 0; i < frase1.length; i++){
+        if(frase1[i] === "a" || frase1[i] === "A"){
+            frase_codificada += "1" 
+        }else if(frase1[i] === "e" || frase1[i] === "E"){
+            frase_codificada += "2" 
+        }else if(frase1[i] === "i" || frase1[i] === "I"){
+            frase_codificada += "3" 
+        }else if(frase1[i] === "o" || frase1[i] === "O"){
+            frase_codificada += "4" 
+        }else if(frase1[i] === "u" || frase1[i] === "U"){
+            frase_codificada += "5" 
+        }else{
+            frase_codificada += frase1[i]
+        }
+    }
+    return frase_codificada
+}
+
+function decodificar(frase2){
+    frase2 = frase2.replaceAll("1", "a")
+    frase2 = frase2.replaceAll("2", "e")
+    frase2 = frase2.replaceAll("3", "i")
+    frase2 = frase2.replaceAll("4", "o")
+    frase2 = frase2.replaceAll("5", "u")
+    console.log(frase2)
+}
+let frase = codificar('A casa e o sol')
+console.log("codificado: " + frase)
+decodificar("decodificado: " + frase)
