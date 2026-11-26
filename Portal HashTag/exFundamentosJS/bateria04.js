@@ -1,7 +1,7 @@
 //EXERCÍCIO 14
 const despesas = [150, 80, 200, 60, 120]
-const resultado = []
 function controledeDespesas(despesas){
+    const resultado = []
     for(let i = 0; i < despesas.length; i++){
         if(despesas[i] > 100){
             resultado.push("Alto gasto")
